@@ -14,15 +14,84 @@ html {
 body {
   box-sizing: border-box;
   min-height: 100vh;
+  min-width: 44rem;
   font-family: "Roboto", sans-serif;
-  text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  color: #b9bee5;
   background-image: url("/cosmos.jpg");
   background-size: cover;
   background-position: top;
+}
+
+.welcome-text {
+  margin: 9rem 0 2.5rem 0;
+  color: #fff;
+  font-weight: 500;
+  font-size: 5.5rem;
+  box-shadow: 0 4px 19px rgba(0, 0, 0, 0.97);
+}
+
+.container {
+  width: 38.9rem;
+  height: 67.6rem;
+  background: #171929;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 27px;
+  box-shadow: 0 0 5rem rgba(0, 0, 0, 0.7);
+}
+
+h1 {
+  margin: 4rem 7.5rem 1rem 7.5rem;
+  color: #fff;
+  font-weight: 400;
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+.container--hint {
+  color: #797ea3;
+  font-weight: 300;
+  font-size: 1.5rem;
+  line-height: 1.8rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Form */
+
+#form {
+  width: 80%;
+}
+
+.form-group {
+  height: 6.5rem;
+}
+
+label {
+  position: relative;
+  bottom: 3px;
+}
+
+input {
+  width: 100%;
+  height: 3.4rem;
+  font-family: "Roboto", sans-serif;
+  padding: 5px;
+  background: #171929;
+  color: #fff;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #3f4363;
+  box-sizing: border-box;
+  transition: all 0.3s;
+}
+
+input:focus {
+  border-bottom: 1px solid #fff;
 }
 
 input:is([type="checkbox"]) {
@@ -39,4 +108,42 @@ input:is([type="checkbox"]):checked {
     lightgrey;
   background-repeat: no-repeat;
   border: 2px solid lightgrey;
+}
+
+textarea {
+  width: 100%;
+  height: 3.4rem;
+  font-family: "Roboto", sans-serif;
+  resize: none;
+  padding: 5px;
+  background: #171929;
+  color: #fff;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #3f4363;
+  box-sizing: border-box;
+  transition: all 0.3s;
+}
+
+button {
+  cursor: pointer;
+  font-family: "Roboto", sans-serif;
+  background: #2c2f47;
+  color: #fff;
+  border: none;
+  border-radius: 28px;
+  height: 44px;
+  width: 121px;
+}
+
+button:hover {
+  border: 1px solid #b9bee5;
+  transform: translateY(-3px);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+}
+
+button:active {
+  transform: translateY(-1px);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+  cursor: progress;
 }
