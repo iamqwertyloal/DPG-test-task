@@ -21,7 +21,7 @@ body {
   align-items: center;
   flex-direction: column;
   color: #b9bee5;
-  background-image: url("/cosmos.jpg");
+  background-image: url("cosmos.jpg");
   background-size: auto;
   background-position: top;
   background-repeat: no-repeat;
