@@ -22,8 +22,9 @@ body {
   flex-direction: column;
   color: #b9bee5;
   background-image: url("/cosmos.jpg");
-  background-size: cover;
+  background-size: auto;
   background-position: top;
+  background-repeat: no-repeat;
 }
 
 .welcome-text {
@@ -36,7 +37,7 @@ body {
 
 .container {
   width: 38.9rem;
-  height: 67.6rem;
+  height: 81.6rem;
   background: #171929;
   display: flex;
   align-items: center;
@@ -69,11 +70,31 @@ h1 {
 
 .form-group {
   height: 6.5rem;
+  margin-bottom: 3rem;
+}
+
+.form-group.terms {
+  margin-bottom: 0;
+  text-align: center;
+  margin-top: -1rem;
+}
+
+.form-group.terms input {
+  margin-right: 2rem;
+}
+
+.form-group.submit {
+  display: flex;
+  justify-content: center;
+  margin-top: -1rem;
 }
 
 label {
   position: relative;
-  bottom: 3px;
+  color: #797ea3;
+  font-weight: 300;
+  font-size: 1.5rem;
+  bottom: 7px;
 }
 
 input {
@@ -96,18 +117,18 @@ input:focus {
 
 input:is([type="checkbox"]) {
   appearance: none;
-  width: 1rem;
-  height: 1rem;
-  background: lightgrey;
+  width: 3rem;
+  height: 3rem;
+  background: #2c2f47;
   border-radius: 0.3rem;
   transition: background-color 300ms, border-color 300ms;
 }
 
 input:is([type="checkbox"]):checked {
   background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' xml:space='preserve' viewBox='-10 -10 64.56 64.56'%3E%3Cpath d='M23.297 38.74a6.563 6.563 0 0 1-10.16.499L1.308 26.112a5.083 5.083 0 1 1 7.551-6.805l8.369 9.288a.617.617 0 0 0 .956-.047L35.386 5.217a5.083 5.083 0 1 1 8.181 6.032L23.297 38.74z'/%3E%3C/svg%3E"),
-    lightgrey;
+    #2c2f47;
   background-repeat: no-repeat;
-  border: 2px solid lightgrey;
+  border: 2px solid #2c2f47;
 }
 
 textarea {
@@ -125,11 +146,17 @@ textarea {
   transition: all 0.3s;
 }
 
+a {
+  color: #b9bee5;
+}
+
 button {
   cursor: pointer;
   font-family: "Roboto", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 400;
   background: #2c2f47;
-  color: #fff;
+  color: rgba(255, 255, 255, 0.7);
   border: none;
   border-radius: 28px;
   height: 44px;
